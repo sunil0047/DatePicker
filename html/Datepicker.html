@@ -4,21 +4,39 @@
         <title>Picke a Dtae</title>
         <link rel='stylesheet' type="text/css" href="../css/stylesheet.css"/>
         <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
-        <script type='text/javascript' src='../js/datepicker.js'></script>
+        <link rel="stylesheet" href="/resources/demos/style.css">  
     </head>
     <body>
         <div id="header">
             <h2>Select the Desination</h2>
         </div>
         <div class="Depart">
-            <p>Departing: <input type="text" class="Departing" ></p>
+            <span class="departLabel">Depart</span>
+            <input type="text" class="Departing"></p>
         </div>
         <div class="return">
-            <p>Returing:<input type="text" class="Returing"></p>
+            <span class='returnLabel'>Return</span>
+            <input type="text" class="Returing"></p>
         </div>
         <div class='container'>
-            
+            <p>Destination:<select id="selectcountry">
+                <option value='India'>India</option>
+                <option value="Austriala">Austriala</option>
+                <option value="South Africa">South Africa</option>
+                <option value="USA">USA</option>
+            </select></p>
         </div>
+        <div class="submit">
+            <button class="submit21">Submit</button>
+        </div>
+        <script type='text/javascript' src='../js/datepicker.js'></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function() {
+    $(".Returing,.Departing").datepicker();
+  });
+        </script>
     </body>
 
 </html>
